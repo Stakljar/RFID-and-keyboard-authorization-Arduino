@@ -128,7 +128,7 @@ bool isReadUIDValid(){
   return true;
 }
 
-void blinkLeds(){
+void blinkLed(){
   for(byte i = 0; i < 3; i++){
     turnLed('r');
     delay(300);
@@ -151,7 +151,7 @@ void confirmRFIDInput(){
 }
 
 void denyRFIDInput(){
-  blinkLeds();
+  blinkLed();
   denyAccess();
   mfrc522.PICC_HaltA();
 }
