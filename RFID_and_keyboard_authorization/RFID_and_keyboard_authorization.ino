@@ -44,7 +44,7 @@ void setup() {
   lcd.init();
   Serial.begin(9600);
   SPI.begin();
-	mfrc522.PCD_Init();	
+  mfrc522.PCD_Init();	
   mfrc522.PCD_DumpVersionToSerial();
 }
 
